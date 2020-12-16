@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>820</width>
+    <height>455</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>820</width>
+    <height>455</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GlobalStrike - FALL 20</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-30</y>
+      <width>801</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>801</width>
+      <height>481</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="StartLobby">
+     <attribute name="title">
+      <string>Start Lobby</string>
+     </attribute>
+     <widget class="QPushButton" name="quitButton">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>390</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>240</y>
+        <width>321</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="StartLobbyButton">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Start Lobby</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="JoinLobbyButton">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Join Lobby</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="mainLobbyBackground">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>0</y>
+        <width>801</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/mainLobbyScreen.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>mainLobbyBackground</zorder>
+     <zorder>quitButton</zorder>
+     <zorder>layoutWidget</zorder>
+    </widget>
+    <widget class="QWidget" name="JoinLobby">
+     <attribute name="title">
+      <string>Join Lobby</string>
+     </attribute>
+     <widget class="QPushButton" name="JoinButton">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>280</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Join Lobby</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitButton2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>480</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ResetButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>480</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="homebutton2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputPNameLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>314</x>
+        <y>287</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>314</x>
+        <y>261</y>
+        <width>103</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;Player Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputPNumLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>162</x>
+        <y>287</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="maxLength">
+       <number>6</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>162</x>
+        <y>261</y>
+        <width>102</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;Port Number&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="joinLobbyBackground">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/mainLobbyScreen.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>261</y>
+        <width>84</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;IP Address&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputIPLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>287</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputPWordLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>465</x>
+        <y>287</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>465</x>
+        <y>261</y>
+        <width>76</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <zorder>joinLobbyBackground</zorder>
+     <zorder>JoinButton</zorder>
+     <zorder>quitButton2</zorder>
+     <zorder>ResetButton</zorder>
+     <zorder>homebutton2</zorder>
+     <zorder>inputPNameLineEdit</zorder>
+     <zorder>label_9</zorder>
+     <zorder>inputPNumLineEdit</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_11</zorder>
+     <zorder>inputIPLineEdit</zorder>
+     <zorder>inputPWordLineEdit</zorder>
+     <zorder>label_12</zorder>
+    </widget>
+    <widget class="QWidget" name="HostLobby">
+     <attribute name="title">
+      <string>Host Lobby</string>
+     </attribute>
+     <widget class="QPushButton" name="closeServerButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>300</y>
+        <width>110</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Close Server</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="startServerButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>264</y>
+        <width>105</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Start Server</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="hnameLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>302</x>
+        <y>265</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="homebutton1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitButton3">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>390</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hostLobbyBackground">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/mainLobbyScreen.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pwordLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>302</x>
+        <y>294</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>152</x>
+        <y>265</y>
+        <width>144</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;Host Player Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>152</x>
+        <y>294</y>
+        <width>134</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;Server Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <zorder>hostLobbyBackground</zorder>
+     <zorder>closeServerButton</zorder>
+     <zorder>startServerButton</zorder>
+     <zorder>hnameLineEdit</zorder>
+     <zorder>homebutton1</zorder>
+     <zorder>quitButton3</zorder>
+     <zorder>resetButton</zorder>
+     <zorder>pwordLineEdit</zorder>
+     <zorder>label_13</zorder>
+     <zorder>label_14</zorder>
+    </widget>
+    <widget class="QWidget" name="GameLobby">
+     <attribute name="title">
+      <string>Game Lobby</string>
+     </attribute>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>60</y>
+        <width>461</width>
+        <height>200</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitButton4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>490</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="leaveButton">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>490</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Leave</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="readyButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ready</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="connectionIPLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>201</x>
+        <y>306</y>
+        <width>159</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>366</x>
+        <y>281</y>
+        <width>33</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;Port&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="portNumLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>366</x>
+        <y>306</y>
+        <width>159</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>201</x>
+        <y>281</y>
+        <width>110</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff7f;&quot;&gt;Connection IP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gameLobbyBackground">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/mainLobbyScreen.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitButtonGameLobby">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="disconnectButton">
+      <property name="geometry">
+       <rect>
+        <x>659</x>
+        <y>346</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Disconnect</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>659</x>
+        <y>304</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Start Game</string>
+      </property>
+     </widget>
+     <zorder>gameLobbyBackground</zorder>
+     <zorder>tableView</zorder>
+     <zorder>quitButton4</zorder>
+     <zorder>leaveButton</zorder>
+     <zorder>connectionIPLineEdit</zorder>
+     <zorder>label_4</zorder>
+     <zorder>portNumLineEdit</zorder>
+     <zorder>label_3</zorder>
+     <zorder>quitButtonGameLobby</zorder>
+     <zorder>readyButton</zorder>
+     <zorder>disconnectButton</zorder>
+     <zorder>pushButton</zorder>
+    </widget>
+    <widget class="QWidget" name="Gameplay">
+     <attribute name="title">
+      <string>Gameplay</string>
+     </attribute>
+     <widget class="QPushButton" name="quitButton5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>490</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="leaveButton2">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>490</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Leave</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mainGamePlayScreenLabel">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>811</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/mainGameplayScreen.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdDisplay">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>290</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LaunchInterceptor">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>394</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Launch Interceptor</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LaunchMissile">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>353</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Launch Missile</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_2">
+      <property name="geometry">
+       <rect>
+        <x>627</x>
+        <y>400</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>627</x>
+        <y>366</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelGreen">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>40</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelWhite">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>70</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelOrange">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>300</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelYellow">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>310</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelBlack">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>130</y>
+        <width>59</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ATLANTIS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>59</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ZATHURA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>100</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>REPUBLIC OF TEXAS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>340</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>WEST RIVERDALE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>380</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>COBRA ISLAND</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelBlack_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>129</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelGreen_2">
+      <property name="geometry">
+       <rect>
+        <x>409</x>
+        <y>79</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelOrange_2">
+      <property name="geometry">
+       <rect>
+        <x>499</x>
+        <y>329</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelWhite_2">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>140</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="animationLabelYellow_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>289</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+     </widget>
+     <zorder>mainGamePlayScreenLabel</zorder>
+     <zorder>LaunchInterceptor</zorder>
+     <zorder>LaunchMissile</zorder>
+     <zorder>progressBar_2</zorder>
+     <zorder>progressBar</zorder>
+     <zorder>lcdDisplay</zorder>
+     <zorder>quitButton5</zorder>
+     <zorder>leaveButton2</zorder>
+     <zorder>animationLabelGreen</zorder>
+     <zorder>animationLabelWhite</zorder>
+     <zorder>animationLabelOrange</zorder>
+     <zorder>animationLabelYellow</zorder>
+     <zorder>animationLabelBlack</zorder>
+     <zorder>label</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_8</zorder>
+     <zorder>animationLabelBlack_2</zorder>
+     <zorder>animationLabelGreen_2</zorder>
+     <zorder>animationLabelOrange_2</zorder>
+     <zorder>animationLabelWhite_2</zorder>
+     <zorder>animationLabelYellow_2</zorder>
+    </widget>
+    <widget class="QWidget" name="Results">
+     <attribute name="title">
+      <string>Results</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>811</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTableView" name="ResultsTable"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="quitButton6">
+         <property name="text">
+          <string>Quit</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

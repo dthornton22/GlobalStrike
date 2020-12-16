@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>mainLobbyScreen.png</file>
+        <file>mainGameplayScreen.jpg</file>
+        <file>animationImage.gif</file>
+        <file>ezgif_missile_launch_toNW.gif</file>
+        <file>ezgif_missile_launch_toNE.gif</file>
+        <file>ezgif_explosion.gif</file>
+    </qresource>
+</RCC>
